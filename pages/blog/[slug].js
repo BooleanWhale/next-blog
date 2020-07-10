@@ -4,6 +4,7 @@ import path from 'path';
 import Head from 'next/head';
 import matter from 'gray-matter'; //parses metadata from markdown
 import marked from 'marked'; //turns markdown into html
+import Layout from '../components/Layout'
 
 const Post = ({htmlString, data}) => {
     return(
@@ -21,14 +22,12 @@ const Post = ({htmlString, data}) => {
 export const getStaticPaths = async () => {
 
     const files = fs.readdirSync('posts')
-    console.log('files: ', files)
 
     const paths = files.map(filename => ({
         params: {
             slug: filename.replace(".md", "")
         }
     }))
-    console.log('paths: ', paths)
 
     return {
         paths,
@@ -54,6 +53,6 @@ export const getStaticProps = async ({params: {slug}}) => {
 }
 // this function fetches the data to create the path
 
-export default Post;
+export default Layout(Post);
 
 // this generates dynamic routes 

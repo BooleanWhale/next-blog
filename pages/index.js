@@ -1,30 +1,11 @@
-import Head from 'next/head'
-import Link from 'next/Link'
-import fs from 'fs'
+import Layout from './components/Layout';
+import Home from './Home.js'
 // import './main.css';
 
-export default function Home({slugs}) {
+const Index = () => {
   return (
-    <div><p className="test">test</p>
-      <ul>
-        {slugs.map( slug => {
-          return(
-          <li key={slug}>
-            <Link key={slug} href={'/blog/'+slug}><a>{slug}</a></Link>
-          </li>
-          )
-        })}
-      </ul>
-    </div> 
+    <Home/>
   )
 }
 
-export const getStaticProps = async () => {
-  const files = fs.readdirSync('posts')
-
-  return {
-    props: { 
-      slugs: files.map(filename => filename.replace('.md',''))
-    }
-  }
-}
+export default Layout(Index) // This adds the global layout (header & footer ect)

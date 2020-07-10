@@ -1,9 +1,28 @@
-@import "./component-styles/Blog.module.scss";
+@import "./colors.scss";
+@import "./component-styles/header.scss";
+@import "./mixins";
 
-.test {
-    color:red;
+body{
+    background-color: $white;
+    margin: 0;
 }
 
-h2 {
-    color: blueviolet;
+a {
+    text-decoration: none;
+    color: $link;
+    @include transition(.1s ease-in-out);
+    cursor: pointer;
+    &:hover{
+        color: $link-hover;
+        text-decoration: none;
+    }
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.row {
+    margin: 4em 20px;
+    max-width: 1200px;
 }
