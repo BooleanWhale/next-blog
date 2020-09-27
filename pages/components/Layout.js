@@ -9,8 +9,10 @@ export default function Layout (Page) {
         return ( 
             <>
                 <Header/>
-                    <Page {...props}/>
-                <Footer/>
+                <main className={"main", "container"}>
+                        <Page {...props}/>
+                </main>
+                {/* <Footer/> */}
             </>
         )
     }

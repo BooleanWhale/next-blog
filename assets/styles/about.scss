@@ -1,0 +1,192 @@
+.about {
+        margin-top: 80px;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: minmax(1px, 100%);
+
+        div {
+                display: flex;
+                align-items: center;
+                grid-column: span 6;
+
+                // background: #353535;
+                // color: #fff;
+                // height: 100%;
+                // width: 100%;
+                // overflow: hidden;
+                // border-radius: 4px;
+        }
+
+        // div {
+        //     grid-column: span 6;
+        // }
+
+        .about-image{
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            img {
+            width:100%;
+            max-width: 15rem;
+            border-radius: 50%;
+            }
+        }
+
+        .about-title {
+            font-size: calc(2vw + 40px);
+            justify-content: center;
+            align-content: flex-end;
+            h1 {
+                margin: auto;
+            }
+        }
+
+        .about-text {
+            max-width: 70ch;
+            white-space: initial;
+            p {
+                margin: 0;
+            }
+        }
+        
+        .social-links {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+            .social-link{
+                width: 90px;
+                margin: 0 10px;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .about-body {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            width: 100%;
+            margin: auto;
+            p {
+                margin: 0;
+                max-width: 90ch;
+            }
+        }
+    }
+
+    // ------------ DESK TOP SIZE ----------- //
+    
+    @media screen and (min-width: 800px) {
+        div .about-image {
+            grid-column: span 2 / (auto);
+            grid-row: span 2 / (auto);
+        }
+
+        div .about-title {
+            grid-column: span 4 / (auto);
+            align-items: flex-end;
+            justify-self: flex-start;
+        }
+
+        div .about-text {
+            grid-column: span 4 / (auto);
+        }
+        .social-links {
+            .social-link{
+                width: 200px;
+                margin: 0 10px;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    
+    // ------------ MOBILE SIZE ----------- //
+    
+    @media screen and (max-width: 700px) {
+        .about {
+
+        }
+
+        div .about-title {
+            grid-row: span 2 / (auto);
+
+        }
+
+        div .about-text {
+            grid-column: span 6 / (auto);
+        }
+
+        .social-links {
+            .social-link{
+                width: 10px;
+                margin: 0 10px;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+
+
+
+
+// .about {
+//     .bio {
+//         margin-top: 80px;
+//         display: flex;
+//         flex-flow: row;
+//         justify-content: space-evenly;
+
+//         .profile-picture{
+//             display: flex;
+//             justify-content: center;
+//                 img {
+//                 align-self: center;
+//                 width:90%;
+//                 max-width: 300px;
+//                 border-radius: 50%;
+                
+//              }
+//         }
+
+//         .bio-text {
+//             h1 {
+//                 font-size: calc(2vw + 50px);
+//             }
+//             p {
+//                 max-width: 70ch;
+//                 white-space: initial;
+//             }
+//         }
+
+//     }
+
+//     .social-Links {
+//         display: flex;
+//         flex-flow: row wrap;
+//         justify-content: space-evenly;
+//         .social-link{
+//             img {
+//                 width:90px;
+//                 margin: 0 10px;
+//             }
+//         }
+//     }
+// }
+
+// // ------------ MOBILE SIZE ----------- //
+
+// @media screen and (max-width: 1200px) {
+//     .bio {
+//         flex-flow: row wrap;
+//     }
+// }

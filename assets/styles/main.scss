@@ -1,6 +1,12 @@
 @import "./colors.scss";
-@import "./component-styles/header.scss";
 @import "./mixins";
+@import "./typography";
+@import "./about.scss";
+@import "./component-styles/header.scss";
+@import "./component-styles/footer.scss";
+
+//  * { outline: rgb(159, 228, 255) 1px solid;}
+// debug
 
 body{
     background-color: $white;
@@ -20,9 +26,34 @@ a {
 
 .container {
     margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 .row {
-    margin: 4em 20px;
+    margin: auto;
     max-width: 1200px;
+
+}
+
+.page {
+    margin-top: 40px;
+}
+
+// ----- TEXT ----- //
+
+.text-size-2 {
+    font-size: 24px;
+}
+
+
+// ----- TEMP ------ //
+
+.cover-image {
+    max-width: 200px;
+}
+
+.hero-post, .blog-post-preview {
+    box-shadow: 2px 2px 2px black;
+    max-width: 200px;
 }

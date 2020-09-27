@@ -1,14 +1,21 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Navigation from './smallComponents/Navigation'
 
 export default function Header() {
-
+    const [menuActive, setMenuActive] = useState(false);
+    
     return (
-    <header className="header">
-        <img className="logo" scr="/vercel.svg"/>
-        <Navigation/>
-    </header> 
-    )
+        <>
+            <header className="header">
+                <img className="site-logo" src='/static/logo.png'/>
+                <div className={`menu-container ${menuActive && 'active'}`}>
+                    <Navigation/>
+                </div>
+                <div className="menu-icon" onClick={()=> setMenuActive(!menuActive)}/>
+            </header>
+            <div className="header-spacer"></div> 
+        </>
+    ) // not all browsers support position:sticky;
 }
 
 

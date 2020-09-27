@@ -9,51 +9,100 @@ header {
     z-index: 100;
     top: 0;
 
-    .logo {
-        font-size: 22px;
-        display: flex;
-        align-items: center;
-        margin-left: 30px;
+    .site-logo {
+        height: 80%;
+        align-self: center;
+        margin-left: 10px;
+        position: absolute;
+        // align-items: center;
+        // margin-left: 30px;
     }
 
-    nav{
+    .menu-container{
         height: 65px;
+        width: 100%;
         display: flex;
-        justify-content: space-between;
-        background: $black;
-        color: $white;
+        position: fixed;
+        z-index: 100;
 
-            ul {
-                height: 100%;
-                margin-block-start: 0;
-                margin-block-end: 0;
-                padding-inline-start: 0;
-                align-items: center;
-                display: flex;
-                list-style-type: none;
+        nav{
+            margin-left: auto;
+            margin-right: auto;
 
-                a {
-                    text-decoration: none;
-                    padding: 0 20px 0 20px;
-                    font-size: 20px;
-                    color: $white;
-                    transition: 0.13s;
-                    &:hover{
-                        color: $link-hover;
+                ul {
+                    height: 100%;
+                    margin-block-start: 0;
+                    margin-block-end: 0;
+                    // padding-inline-start: 0;
+                    align-items: center;
+                    display: flex;
+                    list-style-type: none;
+
+                    a {
                         text-decoration: none;
+                        padding: 0 20px 0 20px;
+                        font-size: 20px;
+                        color: $white;
+                        transition: 0.13s;
+                        &:hover{
+                            color: $link-hover;
+                        }
                     }
-                }
+            }
         }
     }
     .menu-icon{
-        font-size: 36px;
-        height: 65px;
-        width: 65px;
+        height: 80%;
+        right: 10px;
+        align-self: center;
+        margin-left: 10px;
+        position: absolute;
+        background-color: darkgray;
+        height: 50px;
+        width: 50px;
         align-items: center;
         cursor: pointer;
         display: none;
         &:hover{
-            color: rgb(182, 182, 182);
+            background-color: rgb(219, 219, 219);
+        }
+    }
+}
+
+.header-spacer {
+    height: 65px;
+}
+
+
+// ------------ MOBILE SIZE ----------- //
+
+@media screen and (max-width: 600px) {
+    header {
+        .menu-container{
+        width: 300px;
+        height: calc(100% - 65px);
+        flex-direction: column;
+        background-color: $black;
+        position: fixed;
+        top: 65px;
+        right: -300px;
+        transition: 130ms ease right;
+        z-index: 20;
+
+            nav ul {
+                flex-direction: column;
+                z-index: 1000;
+                li {
+                    width: 100%;
+                }
+            }
+    
+            &.active{
+                right: 0;
+            }
+        }
+        .menu-icon{
+            display: flex;
         }
     }
 }

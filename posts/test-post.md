@@ -1,7 +1,8 @@
 ---
 title: This is the Blog Title
 date: "2020-05-01T22:12:03.284Z"
-description: "This is the Blog Description"
+excerpt: "This is the Blog Description"
+coverImage: '/static/blog/test-post/cover.jpg'
 ---
 
 This is some regular body text!
@@ -25,3 +26,5 @@ const description = "this is a JavaScript code snippet"
 
 
     const description = "this is a JavaScript code snippet"
+
+

@@ -7,6 +7,7 @@ import marked from 'marked'; //turns markdown into html
 import Layout from '../components/Layout'
 
 const Post = ({htmlString, data}) => {
+
     return(
         <>
             <Head>
@@ -16,16 +17,19 @@ const Post = ({htmlString, data}) => {
             <div className="blog">
                 <div dangerouslySetInnerHTML={{ __html: htmlString }} />
             </div>
+            <div>
+                {data.description}
+            </div>
         </>
 )}; 
 
 export const getStaticPaths = async () => {
 
-    const files = fs.readdirSync('posts')
+    const posts = fs.readdirSync('posts')
 
-    const paths = files.map(filename => ({
+    const paths = posts.map(post => ({
         params: {
-            slug: filename.replace(".md", "")
+            slug: post.replace(".md", "")
         }
     }))
 
@@ -40,7 +44,7 @@ export const getStaticProps = async ({params: {slug}}) => {
 
     const markdownWithMeta = fs.readFileSync(path.join('posts', slug+'.md')).toString();
 
-    const parsedMarkdown = matter(markdownWithMeta)
+    const parsedMarkdown = matter(markdownWithMeta) // meta is also known as 'frontmatter'
 
     const htmlString = marked(parsedMarkdown.content)
 
@@ -52,6 +56,7 @@ export const getStaticProps = async ({params: {slug}}) => {
     }
 }
 // this function fetches the data to create the path
+
 
 export default Layout(Post);
 

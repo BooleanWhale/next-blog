@@ -1,36 +1,49 @@
-import Link from 'next/Link'
-import fs from 'fs'
+import Link from 'next/Link';
+import fs from 'fs';
 import Layout from './components/Layout';
-import BlogPosts from './components/BlogPosts';
-// import './main.css';
+import {getAllPosts} from './api/getPosts'
+import HeroPost from './components/smallComponents/HeroPost'
+import MorePosts from './components/smallComponents/MorePosts'
 
-const Blog = ({slugs}) => {
+const Blog = ({slugs, allPosts}) => {
+
+  const heroPost = allPosts[0];
+  const morePosts = allPosts.slice(1);
+
   return (
-    <div><p className="test">test</p>
-      <ul>
-        {slugs.map( slug => {
-          return(
-          <li key={slug}>
-            <Link as={'/blog/'+slug} href={'/blog/'+slug}>
-              <a>{slug}</a>
-            </Link>
-          </li>
-          )
-        })}
-      </ul>
-      {/* <BlogPosts/> */}
+    <div>
+    <HeroPost
+      title={heroPost.title}
+      coverImage={heroPost.coverImage}
+      date={heroPost.date}
+      author={heroPost.author}
+      slug={heroPost.slug}
+      excerpt={heroPost.excerpt}
+    />
+
+    <MorePosts posts={morePosts}/>
+
     </div> 
   )
 }
 
 export default Layout(Blog) // This adds the global layout (header & footer ect)
 
-export const getStaticProps = async () => {
+export async function getStaticProps() {
   const files = fs.readdirSync('posts')
+
+  const allPosts = getAllPosts([ 
+    'title',
+    'date',
+    'excerpt',
+    'coverImage',
+    'slug'
+  ])
 
   return {
     props: { 
-      slugs: files.map(filename => filename.replace('.md',''))
+      slugs: files.map(filename => filename.replace('.md','')),
+      allPosts
     }
   }
 }
