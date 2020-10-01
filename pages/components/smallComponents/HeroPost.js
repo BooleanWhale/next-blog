@@ -9,7 +9,7 @@ export default function HeroPost({ // these are the props
   date,
   excerpt,
   slug,
-}) { // these where the props
+}) { // these were the props
   return (
     <section className="hero-post">
 

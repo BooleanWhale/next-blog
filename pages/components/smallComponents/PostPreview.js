@@ -10,19 +10,28 @@ export default function PostPreview({
   slug,
 }) {
   return (
-    <div className="blog-post-preview">
-      <div className="mb-5">
-        <CoverImage slug={slug} title={title} src={coverImage} />
+    <div className="blog-post-preview flex-item">
+      <div className="accent"></div>
+      <CoverImage slug={slug} title={title} src={coverImage} />
+      <div className="blog-info">
+        <div className="accented-title">
+          <h3 className="blog-title">
+            <Link as={`/blog/${slug}`} href="/blog/[slug]">
+              <a className="hover:underline">{title}</a>
+            </Link>
+          </h3>
+          <div className="accent"></div>
+        </div>
+        <p className="blog-text">{excerpt}</p>
+        <div className="blog-info-bottom">
+          <div className="blog-date">
+            <DateFormater dateString={date} />
+          </div>
+          <div className="blog-section">
+            <span>JAVASCRIPT</span>
+          </div>
+        </div>
       </div>
-      <h3 className="text-3xl mb-3 leading-snug">
-        <Link as={`/blog/${slug}`} href="/blog/[slug]">
-          <a className="hover:underline">{title}</a>
-        </Link>
-      </h3>
-      <div className="text-lg mb-4">
-        <DateFormater dateString={date} />
-      </div>
-      <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
     </div>
   )
 }

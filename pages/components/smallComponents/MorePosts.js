@@ -3,9 +3,9 @@ import PostPreview from './PostPreview'
 export default function MoreStories({ posts }) {
   return (
     <section className="more-posts">
-      <h2 className="subtitle">
+      {/* <h2 className="subtitle">
         More Stories
-      </h2>
+      </h2> */}
       <div className="posts-container">
         {posts.map((post) => (
           <PostPreview

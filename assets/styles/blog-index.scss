@@ -1,0 +1,144 @@
+// .flex-container {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+// }
+
+#blog-banner {
+    width: 100%;
+    height: 300px;
+    background-image:
+    linear-gradient(
+      to bottom right, 
+      rgb(255, 142, 176), #f06d06
+    );
+}
+
+.posts-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 2em;
+}
+
+.accent {
+    background-color: rgb(236, 234, 119);
+    position: absolute;
+    left:0;
+    width: 100%;
+    height: 1em;
+    z-index: -1;
+}
+
+.blog-post-preview  {
+    width: 100%;
+    max-width: 800px;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-image-container {
+    height: 37em;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1em;
+    order: 2;
+}
+
+.blog-info {
+    position: relative;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -12em;
+    top: 22em;
+    padding: 2em;
+    background-color: white;
+    border-radius: 1em;
+    box-shadow: 3px 3px 12px 2px rgba(0, 0, 0, 0.1);
+    order: 1;
+
+    .blog-title {
+        margin: 0 0 1em; 
+    }
+
+    .accented-title {
+        position: relative;
+
+        .accent {
+            position: absolute;
+            bottom: -0.9em;
+            width: 80%;
+            height: 0.5em;
+            z-index: 1;
+        }
+    }
+
+    .blog-info-bottom {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1.7em;
+        margin-bottom: -0.7em;
+
+        .blog-date {
+            color: #9e9e9e;
+            letter-spacing: 0.1em;
+        }
+
+        .blog-section {
+            color: #b7b400;
+            letter-spacing: 0.2em;
+            font-weight: 800;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .blog-image-container {
+        height: 30em;
+    }
+
+    .blog-info {
+        top: 16em;
+        width: calc(100vw - 12em);
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .posts-container {
+        padding: 0;
+    }
+
+    .blog-post-preview {
+        display: initial;
+        width: 100%;
+    }
+
+    .blog-image-container {
+        height: 300px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        border-radius: 0;
+    }
+
+    .blog-info {
+        position: static;
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 0;
+        bottom: 230px;
+        padding: 0;
+        background-color: white;
+        border-radius: 1em;
+        box-shadow: none;
+
+        .accented-title, .blog-text, .blog-info-bottom {
+            margin: 1em;
+        }       
+    }
+
+}

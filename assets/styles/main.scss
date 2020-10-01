@@ -2,6 +2,8 @@
 @import "./mixins";
 @import "./typography";
 @import "./about.scss";
+@import "./layouts.scss";
+@import "./blog-index.scss";
 @import "./component-styles/header.scss";
 @import "./component-styles/footer.scss";
 
@@ -9,8 +11,9 @@
 // debug
 
 body{
-    background-color: $white;
+    background-color: rgb(255, 255, 255);
     margin: 0;
+    color: $dark-grey;
 }
 
 a {
@@ -26,6 +29,7 @@ a {
 
 .container {
     margin: 0 auto;
+    max-width: 1080px;
     padding-left: 24px;
     padding-right: 24px;
 }
@@ -46,14 +50,7 @@ a {
     font-size: 24px;
 }
 
+// ----- GENERAL LAYOUT ------ //
+
 
 // ----- TEMP ------ //
-
-.cover-image {
-    max-width: 200px;
-}
-
-.hero-post, .blog-post-preview {
-    box-shadow: 2px 2px 2px black;
-    max-width: 200px;
-}

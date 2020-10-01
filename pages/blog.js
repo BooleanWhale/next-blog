@@ -12,16 +12,19 @@ const Blog = ({slugs, allPosts}) => {
 
   return (
     <div>
-    <HeroPost
+    {/* <HeroPost
       title={heroPost.title}
       coverImage={heroPost.coverImage}
       date={heroPost.date}
       author={heroPost.author}
       slug={heroPost.slug}
       excerpt={heroPost.excerpt}
-    />
-
-    <MorePosts posts={morePosts}/>
+    /> */}
+    <div id="blog-banner"></div>
+    <div className="container">
+      <h2 className="page-title">Blog</h2>
+    </div>
+    <MorePosts posts={allPosts}/>
 
     </div> 
   )
