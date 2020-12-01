@@ -1,0 +1,40 @@
+#social-links {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    .social-link{
+        position: relative;
+        width: 90px;
+        margin: 0 10px;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+// ------------ MOBILE SIZE ----------- //
+
+@media screen and (max-width: 700px) {
+
+    #social-links {
+        .social-link{
+            width: 75px;
+            margin: 0 10px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.social-link:hover {
+    width: 100px;
+    transform: scale(1.1);
+}
+
+.social-link:active {
+    top: 0.2em;
+}

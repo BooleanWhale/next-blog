@@ -1,7 +1,99 @@
-$link: rgb(66, 62, 60);
-$link-hover: rgb(238, 96, 40);
-$white: rgb(255, 255, 255);
-$black: #0d0e0e; // off-black #0d0e0e
-$dark-grey: #474747;
-$text-color: #222222;
-$text-light: #d8d8d8;
+:root {
+    --color-bg: rgb(255, 255, 255);
+    --color-text: #474747;
+    --color-accent: coral;
+    --link: rgb(66, 62, 60);
+    --link-hover: rgb(238, 96, 40);
+    --white: rgb(255, 255, 255);
+    --off-white: #f9f9f9;
+    --black: #0d0e0e; // off-black #0d0e0e
+    --near-black: #1f1f1f;
+    --light-grey: #f1f1f1;
+    --dark-grey: #3d3d3d;
+    --text-color: #222222;
+    --text-light: #d8d8d8;
+    --red: red;
+}
+
+@media (prefers-color-scheme: light) {
+    .light {
+        display: none;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+
+}
+
+/* swith to dark mode when dark button checked */
+#dark-mode-switch:checked ~ .dark-bg {
+    background-color: var(--text-color);
+    color: var(--light-grey);
+
+    a {
+        color: var(--light-grey);
+        &:hover{
+            color: var(--link-hover);
+            text-decoration: none;
+        }
+    }
+
+    .black-button {
+        background-color: var(--color-bg);
+        color: var(--text-color);
+        &:visited {color:--text-color;}
+    }
+
+    .color-off-bg, .dark-mode-off-bg {
+        background-color: var(--dark-grey);
+    }
+
+    input, textarea, .blog-info {
+        background-color: var(--text-color);
+        color: var(--light-grey);
+    }
+
+    .main-gradient {
+        background-image: linear-gradient(to bottom right, #b74662, #762277);
+    }
+
+    .modal {
+        background-color: rgba(0,0,0,0.85);
+    }
+}
+
+
+//------------- Default colors -------------//
+
+body {
+    background-color: var(--color-bg);
+    color: var(--text-color);
+}
+
+a {
+    color: var(--text-color);
+}
+
+.color-off-bg {
+    background-color: var(--light-grey);
+}
+
+.menu-container.active {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.main-gradient {
+    background-image: linear-gradient(to bottom right, #ff9560, #ff675a);
+}
+
+.accent-button {
+    background-image: linear-gradient(to bottom right, #ff9560, #ff675a);
+    color: white;
+}
+
+.black-button {
+    background-color: var(--text-color);
+    color: var(--color-bg);
+    &:visited {color: var(--color-bg);}
+    &:hover {color: var(--light-grey);}
+}

@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function Header() {
+export default function Footer() {
   return (
-    <footer>
-        <p>TESTING FOOTER</p>
+    <footer className="dark-bg">
+        <p>Built with Next.js</p>
     </footer> 
   )
 }

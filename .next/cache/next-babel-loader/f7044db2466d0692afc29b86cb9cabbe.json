@@ -1,0 +1,1 @@
+{"ast":null,"code":"export default function () {}","map":{"version":3,"sources":["/Users/ashleysaleem-west/Documents/GitHub/next-blog/pages/components/smallComponents/DarkModeSwitch.js"],"names":[],"mappings":"AAAA,eAAe,YAAW,CAEzB","sourcesContent":["export default function() {\n    \n}"]},"metadata":{},"sourceType":"module"}

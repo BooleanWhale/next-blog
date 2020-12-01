@@ -1,0 +1,147 @@
+section {
+    margin-bottom: 5em;
+}
+
+#hero {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10em;
+
+    .hero-info {
+        max-width: 20em;
+    }
+
+    .profile-pic {
+        border-radius: 50%;
+        width: 30vw;
+        min-width: 250px;
+        max-width: 400px;
+    }
+}
+
+#about-me {
+    display: flex;
+    #about-me-image-container {
+        width: 100%;
+        position: relative;
+        #about-me-image {
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            margin: 0 2em 0 -24px;
+        }
+    }
+    #about-me-info-cont {
+        width: 100%;
+        justify-content: right;
+        display: flex;
+        #about-me-info {
+            max-width: 50ch;
+        }
+    }
+}
+
+#certifications {   
+    margin: 5em 0;
+    padding: 2em;
+    .container {
+        display: flex;
+        justify-content: space-around;
+        .certification {
+            img {
+                max-width: 10em;
+            }
+        }
+    }
+}
+
+#contact-me {
+    display: flex;
+
+    >div{
+        width:50%;
+    }
+
+    #contact-me-text>div {
+        padding-top: calc(2em + 2vw);
+        padding-right: calc(2em + 2vw);
+
+        h3 {
+            margin-top: 0;
+        }
+
+        .hand-emoji {
+            text-align: center;
+            margin-top: 0.5em;
+            font-size: 5em;
+        }
+    }
+
+    #contact-me-box {
+        position: relative;
+
+        form {
+            padding: calc(2em + 2vw);
+            max-width: 40vw;
+            line-height: 14px;
+            position: relative;
+            z-index: 1;
+
+            input, textarea {
+                width: 100%;
+                border-radius: 4px;
+                border: none;
+                padding: 1em;
+                margin-bottom: 1em;
+                box-shadow: inset 0 1px 3px 0 #000000;
+                font-size: 1em;
+                font-family: inherit;
+            }
+
+            textarea {
+                min-height: 128px;
+            }
+
+            button {
+                display: block;
+                position: relative;
+                margin: auto;
+                background-color: white;
+                color: #cc5d0c;
+                border: none;
+                font-size: 1em;
+                padding: 0.5em 0.8em;
+                border-radius: 4px;
+                box-shadow: 0 3px 20px 3px rgba(0, 0, 0, 0.2);
+                cursor: pointer;
+                &:hover {
+                    top:1px;
+                    background-color: rgb(247, 247, 247);
+                    box-shadow: 0 1px 6px 2px rgba(0, 0, 0, 0.4);              
+                }
+                &:active {
+                    top:3px;
+                    background-color: rgb(212, 212, 212);      
+                }
+            }
+        }
+
+        .contact-bg {
+            border-radius: 1em 0 0 1em;
+            height: 100%;
+            width: 50vw;
+            top: 0;
+            position: absolute;
+            box-shadow: 0 10px 30px 0 rgba(0,0,0,0.2);
+        }
+    }
+}
+
+#contact-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}

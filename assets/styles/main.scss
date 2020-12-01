@@ -3,28 +3,35 @@
 @import "./typography";
 @import "./about.scss";
 @import "./layouts.scss";
+@import "./homepage.scss";
 @import "./blog-index.scss";
+@import "./ui-elements.scss";
 @import "./component-styles/header.scss";
 @import "./component-styles/footer.scss";
+@import "./component-styles/social-links.scss";
+@import "./component-styles/workModals.scss";
 
-//  * { outline: rgb(159, 228, 255) 1px solid;}
+//  * { outline: #e8eff2 1px solid;}
 // debug
-
-body{
-    background-color: rgb(255, 255, 255);
+body {
     margin: 0;
-    color: $dark-grey;
+}
+.main-despace {
+    margin: 0;
+    height: 1px;
 }
 
 a {
     text-decoration: none;
-    color: $link;
     @include transition(.1s ease-in-out);
     cursor: pointer;
     &:hover{
-        color: $link-hover;
-        text-decoration: none;
+        color: var(--link-hover);
     }
+}
+
+#dark-mode-switch {
+    display: none;
 }
 
 .container {
@@ -40,8 +47,17 @@ a {
 
 }
 
+.center {
+    margin: 0 auto;
+    text-align: center;
+}
+
 .page {
     margin-top: 40px;
+}
+
+.shadow {
+    box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.2);
 }
 
 // ----- TEXT ----- //
@@ -53,4 +69,12 @@ a {
 // ----- GENERAL LAYOUT ------ //
 
 
-// ----- TEMP ------ //
+// ----- GENERAL EFFECTS ------ //
+
+.hover-grow {
+    transition: 0.1s ease-in-out;
+    &:hover{
+        transform: scale(1.1);
+        transition: 0.1s ease-in-out;
+    }
+}

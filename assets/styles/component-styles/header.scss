@@ -3,11 +3,13 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background: $black;
-    color: $white;
+    background: var(--black);
+    color: var(--white);
     position: fixed;
     z-index: 100;
     top: 0;
+    background: rgba(0,0,0,0.8);
+    backdrop-filter: saturate(180%) blur(10px);
 
     .site-logo {
         height: 80%;
@@ -23,9 +25,9 @@ header {
         width: 100%;
         display: flex;
         position: fixed;
-        z-index: 100;
+        z-index: 1;
 
-        nav{
+        nav {
             margin-left: auto;
             margin-right: auto;
 
@@ -42,29 +44,38 @@ header {
                         text-decoration: none;
                         padding: 0 20px 0 20px;
                         font-size: 20px;
-                        color: $white;
                         transition: 0.13s;
+                        color: var(--white);
                         &:hover{
-                            color: $link-hover;
+                            color: var(--link-hover);
                         }
                     }
             }
         }
     }
-    .menu-icon{
-        height: 80%;
-        right: 10px;
-        align-self: center;
-        margin-left: 10px;
+    .nav-right {
         position: absolute;
-        background-color: darkgray;
-        height: 50px;
-        width: 50px;
-        align-items: center;
-        cursor: pointer;
-        display: none;
-        &:hover{
-            background-color: rgb(219, 219, 219);
+        display: flex;
+        right: 10px;
+        z-index: 2;
+        #dark-mode-toggle .names {
+            display: flex;
+        }
+        .menu-icon{
+            height: 80%;
+            align-self: center;
+            margin-left: 10px;
+            height: 50px;
+            width: 50px;
+            align-items: center;
+            cursor: pointer;
+            display: none;
+            svg {
+                fill: darkgray;
+                &:hover{
+                    fill: rgb(219, 219, 219);
+                }
+            }
         }
     }
 }
@@ -82,7 +93,7 @@ header {
         width: 300px;
         height: calc(100% - 65px);
         flex-direction: column;
-        background-color: $black;
+        background-color: --black;
         position: fixed;
         top: 65px;
         right: -300px;
@@ -101,8 +112,10 @@ header {
                 right: 0;
             }
         }
-        .menu-icon{
-            display: flex;
+        .nav-right{
+            .menu-icon{
+                display: flex;
+            }
         }
     }
 }

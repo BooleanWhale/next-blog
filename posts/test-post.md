@@ -3,6 +3,7 @@ title: This is the Blog Title
 date: "2020-05-01T22:12:03.284Z"
 excerpt: "This is the Blog Description"
 coverImage: '/static/blog/test-post/cover.jpg'
+tags: "ux"
 ---
 
 This is some regular body text!

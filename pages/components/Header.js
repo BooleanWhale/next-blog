@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import Navigation from './smallComponents/Navigation'
+import HamburgerIcon from './svg/HamburgerIcon'
+import DarkModeToggle from './smallComponents/DarkModeToggle';
 
 export default function Header() {
     const [menuActive, setMenuActive] = useState(false);
@@ -11,9 +13,15 @@ export default function Header() {
                 <div className={`menu-container ${menuActive && 'active'}`}>
                     <Navigation/>
                 </div>
-                <div className="menu-icon" onClick={()=> setMenuActive(!menuActive)}/>
+                <div className="nav-right">
+                    <DarkModeToggle/>
+                    <div className="menu-icon" onClick={()=> setMenuActive(!menuActive)}>
+                        <HamburgerIcon/>
+                    </div>
+                </div>
             </header>
-            <div className="header-spacer"></div> 
+                    
+            <div className="header-spacer dark-bg"></div>
         </>
     ) // not all browsers support position:sticky;
 }
