@@ -15,6 +15,18 @@
     --red: red;
 }
 
+// SCSS colors
+
+$javascript-accent: #ecea77;
+$javascript-tag: #b7b400;
+$react-accent: #77d4ec;
+$react-tag: #0092b7;
+$ux-accent: #ec77bf;
+$ux-tag: #c50f79;
+
+
+//
+
 @media (prefers-color-scheme: light) {
     .light {
         display: none;

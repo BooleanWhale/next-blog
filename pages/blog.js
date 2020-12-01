@@ -3,7 +3,7 @@ import fs from 'fs';
 import Layout from './components/Layout';
 import {getAllPosts} from './api/getPosts'
 import HeroPost from './components/smallComponents/HeroPost'
-import MorePosts from './components/smallComponents/MorePosts'
+import PostsList from './components/smallComponents/PostsList'
 
 const Blog = ({slugs, allPosts}) => {
 
@@ -24,7 +24,7 @@ const Blog = ({slugs, allPosts}) => {
     <div className="container">
       <h2 className="page-title">Blog</h2>
     </div>
-    <MorePosts posts={allPosts}/>
+    <PostsList posts={allPosts}/>
 
     </div> 
   )
@@ -40,7 +40,8 @@ export async function getStaticProps() {
     'date',
     'excerpt',
     'coverImage',
-    'slug'
+    'slug',
+    'tags'
   ])
 
   return {

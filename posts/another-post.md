@@ -1,5 +1,5 @@
 ---
-title: This is the Title of a Blog
+title: "This is the Title of a Blooog"
 date: "2020-04-01T22:12:03.284Z"
 excerpt: "This is the Blog Description"
 coverImage: '/static/blog/test-post/cover.jpg'

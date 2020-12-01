@@ -1,6 +1,6 @@
 import PostPreview from './PostPreview'
 
-export default function MoreStories({ posts }) {
+export default function PostsList({ posts }) {
   return (
     <section className="more-posts">
       {/* <h2 className="subtitle">
@@ -16,6 +16,7 @@ export default function MoreStories({ posts }) {
             author={post.author}
             slug={post.slug}
             excerpt={post.excerpt}
+            tags={post.tags}
           />
         ))}
       </div>

@@ -22,13 +22,16 @@
 }
 
 .accent {
-    background-color: rgb(236, 234, 119);
     position: absolute;
     left:0;
     width: 100%;
     height: 1em;
     z-index: -1;
 }
+
+.javascript-accent { background-color: $javascript-accent; }
+.react-accent { background-color: $react-accent; }
+.ux-accent { background-color: $ux-accent; }
 
 .blog-post-preview  {
     width: 100%;
@@ -88,10 +91,12 @@
             letter-spacing: 0.1em;
         }
 
-        .blog-section {
-            color: #b7b400;
+        .blog-tags {
             letter-spacing: 0.2em;
             font-weight: 800;
+            .javascript-tag { color: $javascript-tag; }
+            .react-tag { color: $react-tag; }
+            .ux-tag { color: $ux-tag; }
         }
     }
 }

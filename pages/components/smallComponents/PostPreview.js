@@ -8,10 +8,11 @@ export default function PostPreview({
   date,
   excerpt,
   slug,
+  tags
 }) {
   return (
     <div className="blog-post-preview flex-item">
-      <div className="accent"></div>
+      {/* <div className={tags+"-accent accent"}></div> */}
       <CoverImage slug={slug} title={title} src={coverImage} />
       <div className="blog-info">
         <div className="accented-title">
@@ -20,15 +21,15 @@ export default function PostPreview({
               <a className="hover:underline">{title}</a>
             </Link>
           </h3>
-          <div className="accent"></div>
+          <div className={tags+"-accent accent"}></div>
         </div>
         <p className="blog-text">{excerpt}</p>
         <div className="blog-info-bottom">
           <div className="blog-date">
             <DateFormater dateString={date} />
           </div>
-          <div className="blog-section">
-            <span>JAVASCRIPT</span>
+          <div className="blog-tags">
+            <span className={tags+"-tag"}>{tags.toUpperCase()}</span>
           </div>
         </div>
       </div>
