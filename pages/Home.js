@@ -20,7 +20,6 @@ export default function Home ({slugs}) {
       <CertificationsSection/>
       <ContactMeSection/>
       <SocialLinksSection/>
-      <h1>test</h1>
     </> 
   )
 }
