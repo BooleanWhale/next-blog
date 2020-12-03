@@ -6,6 +6,7 @@ section {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-top:3em;
     margin-bottom: 7em;
 
     .hero-info {
@@ -52,7 +53,7 @@ section {
 }
 
 #certifications {   
-    margin: 5em 0;
+    margin-top: 5em;
     padding: 2em;
     .container {
         display: flex;
@@ -66,6 +67,7 @@ section {
 }
 
 #contact-me {
+    padding-top: 5em;
     display: flex;
 
     >div{

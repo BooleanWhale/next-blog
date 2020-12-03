@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Navigation from './smallComponents/Navigation'
-import HamburgerIcon from './svg/HamburgerIcon'
+import HamburgerIcon from './svg/IconMenu'
 import DarkModeToggle from './smallComponents/DarkModeToggle';
 
 export default function Header() {

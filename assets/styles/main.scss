@@ -78,3 +78,9 @@ a {
         transition: 0.1s ease-in-out;
     }
 }
+
+#dark-mode-switch:checked ~ .header {
+    .light-hide {visibility: collapse;}
+    .dark-hide {visibility: visible;}
+}
+.dark-hide {visibility: collapse;}

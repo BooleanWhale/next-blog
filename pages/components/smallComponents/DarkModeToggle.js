@@ -1,9 +1,9 @@
+import IconMoon from '../svg/IconMoon'
+import IconSun from '../svg/IconSun'
+
 export default function DarkModeToggle() {
-    return <label htmlFor="dark-mode-switch" id="dark-mode-toggle">
-                <div className="toggle"></div>
-                <div className="names">
-                    <p className="light-toggle">Light</p>
-                    <p className="dark-toggle">Dark</p>
-                </div>
-            </label>
+    return <label htmlFor="dark-mode-switch" id="dark-mode-toggle" title="darkmode">
+            <IconMoon/>
+            <IconSun/>
+        </label>
 }

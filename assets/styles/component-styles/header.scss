@@ -57,9 +57,12 @@ header {
         position: absolute;
         display: flex;
         right: 10px;
+        height: 100%;
         z-index: 2;
-        #dark-mode-toggle .names {
+        #dark-mode-toggle {
             display: flex;
+            align-items: center;
+            margin-right: -1em;
         }
         .menu-icon{
             height: 80%;
@@ -70,11 +73,11 @@ header {
             align-items: center;
             cursor: pointer;
             display: none;
-            svg {
-                fill: darkgray;
-                &:hover{
-                    fill: rgb(219, 219, 219);
-                }
+        }
+        svg {
+            fill: darkgray;
+            &:hover{
+                fill: rgb(219, 219, 219);
             }
         }
     }
@@ -110,6 +113,7 @@ header {
     
             &.active{
                 right: 0;
+                background: rgba(0, 0, 0, 0.8);
             }
         }
         .nav-right{
@@ -119,3 +123,7 @@ header {
         }
     }
 }
+
+// .menu-container.active {
+//     background: rgba(0, 0, 0, 0.8);
+// }

@@ -11,8 +11,6 @@ import DarkModeToggle from './components/smallComponents/DarkModeToggle'
 export default function Home ({slugs}) {
   return (
     <>
-    {/* <div id="home-banner"></div> */}
-    <p className="test">HOMEPAGE</p>
       <HeroSection/>
       <WhatIDoSection/>
       <WorksSection/>
