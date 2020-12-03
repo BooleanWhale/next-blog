@@ -25,7 +25,7 @@ import Link from 'next/Link';
 export default function Navigation() {
 
     const navLinks = [
-        {title:"Home", path:"/"},
+        {title:"Home", path:"/#"},
         {title:"About", path:"/#about-me"},
         {title:"Contact", path:"/#contact-me"}
     ]

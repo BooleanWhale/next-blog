@@ -12,7 +12,7 @@ export default function Home ({slugs}) {
   return (
     <>
       <HeroSection/>
-      <WhatIDoSection/>
+      {/* <WhatIDoSection/> */}
       <WorksSection/>
       <AboutMeSection/>
       <CertificationsSection/>

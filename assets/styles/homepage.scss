@@ -1,14 +1,18 @@
 section {
-    margin-bottom: 5em;
+    padding-top: 6em;
+    margin-bottom: -2em;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 #hero {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-top:3em;
-    margin-bottom: 7em;
-
+    padding-top: 3em;
+    margin-bottom: -4em;
     .hero-info {
         max-width: 20em;
     }
@@ -21,16 +25,17 @@ section {
     }
 }
 
-    #works {
-        #works-about {
-            h2 {
-                text-align: center;
-            }
+#works {
+    #works-about {
+        h2 {
+            text-align: center;
         }
     }
+}
 
 #about-me {
     display: flex;
+    margin-top: 1em;
     #about-me-image-container {
         width: 100%;
         position: relative;
@@ -53,8 +58,8 @@ section {
 }
 
 #certifications {   
-    margin-top: 5em;
     padding: 2em;
+    margin: 6em 0 0;
     .container {
         display: flex;
         justify-content: space-around;
@@ -67,7 +72,6 @@ section {
 }
 
 #contact-me {
-    padding-top: 5em;
     display: flex;
 
     >div{
@@ -150,6 +154,7 @@ section {
 }
 
 #contact-information {
+    padding-bottom: 5em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -160,7 +165,7 @@ section {
 
     #hero {
         flex-direction: column-reverse;
-        margin-bottom: 0;
+        margin-bottom: -2em;
         .img-container img {
             width: 70vw;
 
@@ -187,7 +192,8 @@ section {
 
     #about-me {
         flex-direction: column;
-        padding: 0;
+        padding: 4em 0;
+        margin-top: 3em;
         #about-me-image-container {
             height: 15em;
             width: 100vw;
