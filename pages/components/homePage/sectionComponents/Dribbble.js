@@ -13,7 +13,7 @@ export default function CodePen() {
         <h4 className="modal-title">{title}</h4>
       </a>
 
-      <label for={id+"-check"}><a className="close-modal">x</a></label>
+      <label htmlFor={id+"-check"}><a className="close-modal">x</a></label>
     </div>
 
     <div className="dribbble-main">
