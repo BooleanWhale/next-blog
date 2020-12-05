@@ -115,7 +115,7 @@ header {
                 // right: 0;
                 transform: translate(-300px);
                 background: rgba(0, 0, 0, 0.8);
-                height: calc(100vh - 64px);
+                height: 100vh;
                 backdrop-filter: saturate(180%) blur(10px);
             }
         }
