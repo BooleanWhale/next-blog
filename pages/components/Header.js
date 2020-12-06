@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import Navigation from './smallComponents/Navigation'
 import HamburgerIcon from './svg/IconMenu'
 import DarkModeToggle from './smallComponents/DarkModeToggle';
+import LogoIcon from './svg/LogoIcon';
 
 export default function Header() {
     const [menuActive, setMenuActive] = useState(false);
@@ -9,7 +10,8 @@ export default function Header() {
     return (
         <>
             <header className="header">
-                <img className="site-logo" src='/static/logo.png'/>
+                {/* <img className="site-logo" src='/static/logo.png'/> */}
+                <LogoIcon/>
                 <div className={`menu-container ${menuActive && 'active'}`}>
                     <Navigation/>
                 </div>
