@@ -58,6 +58,9 @@ $ux-tag: #c50f79;
 
     .svg-dark-mode {
         fill: var(--color-bg);
+        .svg-dark-inverse {
+            fill: var(--dark-grey);
+        }
     }
 
     .color-off-bg, .dark-mode-off-bg {
@@ -92,6 +95,9 @@ a {
 
 .svg-dark-mode {
     fill: var(--text-color);
+    .svg-dark-inverse {
+        fill: var(--light-grey);
+    }
 }
 
 .color-off-bg {
