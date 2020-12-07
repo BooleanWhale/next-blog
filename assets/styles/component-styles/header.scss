@@ -12,9 +12,9 @@ header {
     backdrop-filter: saturate(180%) blur(10px);
 
     .site-logo {
-        height: 60%;
+        height: 30%;
         align-self: center;
-        margin-left: 10px;
+        margin-left: 1.2em;
         position: absolute;
         // align-items: center;
         // margin-left: 30px;
@@ -90,7 +90,7 @@ header {
 
 // ------------ MOBILE SIZE ----------- //
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 850px) {
     header {
         .menu-container{
         width: 300px;

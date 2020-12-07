@@ -2,7 +2,8 @@ export default function HeroSection() {
 
   return <section id="hero" className="container">
     <div className="hero-info">
-      <h3>Somthing something web design and other things. I do web design for my company and things.</h3>
+      <h2>Hi, I'm Ashley</h2>
+      <h1>I make things for the web and make it look good while I'm at it.</h1>
       {/* <a href="#contact-me"><div className="button">Let's talk</div></a> */}
       <a href="#contact-me" className="button accent-button">Let's talk</a>
     </div>

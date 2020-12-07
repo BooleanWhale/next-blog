@@ -7,7 +7,7 @@ export default class HumburgerIcon extends Component {
 	render () { 
 		return (<>
 <svg className="svg-dark-mode" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 54.6" xmlSpace="preserve">
-  <path id="path14" className="st0" d="M147.4,4.6c0-2.1,1.7-3.8,3.9-3.8h44.9c2.1,0,3.9,1.7,3.9,3.8V50c0,2.1-1.7,3.8-3.9,3.8h-44.9
+  <path id="path14" className="st0 svg-dark-mode" d="M147.4,4.6c0-2.1,1.7-3.8,3.9-3.8h44.9c2.1,0,3.9,1.7,3.9,3.8V50c0,2.1-1.7,3.8-3.9,3.8h-44.9
 	c-2.1,0-3.9-1.7-3.9-3.8V4.6z" />
   <path id="path16" className="st1" d="M0,45.2h22V38H8V10.5H0C0,10.5,0,45.2,0,45.2z" />
   <path id="path18" className="st1" d="M33.1,45.2V21.3h-8v23.9H33.1z M29.1,18c2.8,0,4.5-1.8,4.5-4.1c-0.1-2.3-1.7-4.1-4.4-4.1
