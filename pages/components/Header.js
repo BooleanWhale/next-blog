@@ -11,6 +11,7 @@ export default function Header() {
         <>
             <header className="header">
                 {/* <img className="site-logo" src='/static/logo.png'/> */}
+                {/* <a href="/#" className="site-logo"><LogoIcon/></a> */}
                 <LogoIcon/>
                 <div className={`menu-container ${menuActive && 'active'}`}>
                     <Navigation/>
