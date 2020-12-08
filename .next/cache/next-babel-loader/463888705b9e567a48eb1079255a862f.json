@@ -1,0 +1,1 @@
+{"ast":null,"code":"var __jsx = React.createElement;\nimport React from 'react';\nexport default function Footer() {\n  return __jsx(\"footer\", {\n    className: \"dark-bg\"\n  }, __jsx(\"p\", null, \"Built with SCSS & React/Next.js\"), __jsx(\"p\", null, \"\\xA9 Ashley Saleem-West \", new Date().getFullYear()));\n}","map":null,"metadata":{},"sourceType":"module"}

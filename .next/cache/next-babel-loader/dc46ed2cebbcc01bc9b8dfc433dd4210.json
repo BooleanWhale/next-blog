@@ -1,0 +1,1 @@
+{"ast":null,"code":"import React from \"react\";\nvar __jsx = React.createElement;\nimport Layout from './components/Layout';\nimport Home from './Home.js'; // import './main.css';\n\nvar Index = function Index() {\n  return __jsx(Home, null);\n};\n\nexport default Layout(Index); // This adds the global layout (header & footer ect)","map":null,"metadata":{},"sourceType":"module"}

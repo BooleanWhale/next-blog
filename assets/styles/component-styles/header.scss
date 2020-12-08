@@ -16,8 +16,14 @@ header {
         align-self: center;
         margin-left: 1.2em;
         position: absolute;
-        // align-items: center;
-        // margin-left: 30px;
+        svg {
+            height: 100%;
+            fill: darkgray;
+            &:hover{
+                fill: rgb(219, 219, 219);
+                cursor: pointer;
+            }
+        }
     }
 
     .menu-container{
@@ -78,6 +84,7 @@ header {
             fill: darkgray;
             &:hover{
                 fill: rgb(219, 219, 219);
+                cursor: pointer;
             }
         }
     }
