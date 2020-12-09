@@ -11,7 +11,7 @@ export default function Header() {
         <>
             <header className="header">
                 {/* <img className="site-logo" src='/static/logo.png'/> */}
-                {/* <a href="/#" className="site-logo"><LogoIcon/></a> */}
+                {/* <a href="#" className="site-logo"><LogoIcon/></a> */}
                 <a className="site-logo" href="#">
                     <LogoName/>
                 </a>

@@ -40,10 +40,10 @@ export default function CodePen() {
   }
 
   const modalList = [
-    {id:"codepen1",title:"Pure CSS pulsing button effect",url:"GRZbvym",img:"/static/mainpage/codepen-1.png"},
-    {id:"codepen2",title:"Pure CSS dark mode switch",url:"RwRejrb",img:"/static/mainpage/codepen-1.png"},
-    {id:"codepen3",title:"Pure CSS pulsing button effect",url:"GRZbvym",img:"/static/mainpage/codepen-1.png"},
-    {id:"codepen4",title:"Pure CSS dark mode switch",url:"RwRejrb",img:"/static/mainpage/codepen-1.png"},
+    {id:"codepen1",title:"Pure CSS pulsing button effect",url:"GRZbvym",img:"static/mainpage/codepen-1.png"},
+    {id:"codepen2",title:"Pure CSS dark mode switch",url:"RwRejrb",img:"static/mainpage/codepen-1.png"},
+    {id:"codepen3",title:"Pure CSS pulsing button effect",url:"GRZbvym",img:"static/mainpage/codepen-1.png"},
+    {id:"codepen4",title:"Pure CSS dark mode switch",url:"RwRejrb",img:"static/mainpage/codepen-1.png"},
   ]
 
   return <div id="codepens" className="center-text">
@@ -61,7 +61,7 @@ export default function CodePen() {
     </div>
 
     <a className="button black-button" href="https://codepen.io/ash_s_west">See more on CodePen</a>
-    {/* <script defer src="/static/scripts/modelIframe.js"></script> */}
+    {/* <script defer src="static/scripts/modelIframe.js"></script> */}
 
   </div>
 }
