@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'next/Link';
+// import Link from 'next/Link';
 
 // export default function Navigation() {
 
@@ -32,9 +32,9 @@ export default function Navigation() {
 
     return <nav className="navigation">
         <ul>
-            { navLinks.map((link, index) => 
-                    <li key={link.title}>
-                        <a href={link.path}>{link.title}</a>
+            { navLinks.map((navLink, index) => 
+                    <li key={navLink.title}>
+                        <a href={navLink.path}>{navLink.title}</a>
                     </li>
                 )
             }
