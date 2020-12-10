@@ -1,4 +1,4 @@
-import Link from 'next/Link';
+// import Link from 'next/Link';
 import fs from 'fs';
 import Layout from './components/Layout';
 import {getAllPosts} from './api/getPosts'
