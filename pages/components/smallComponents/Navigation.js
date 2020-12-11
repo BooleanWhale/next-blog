@@ -25,9 +25,9 @@ import React from 'react';
 export default function Navigation() {
 
     const navLinks = [
-        {title:"Home", path:"/#"},
-        {title:"About", path:"/#about-me"},
-        {title:"Contact", path:"/#contact-me"}
+        {title:"Home", path:"#"},
+        {title:"About", path:"#about-me"},
+        {title:"Contact", path:"#contact-me"}
     ]
 
     return <nav className="navigation">

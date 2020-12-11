@@ -5,7 +5,7 @@ export default function CodePen() {
   function codePenShot ({title,url,id}) { return <>
     <div className="modal-header">
       <a href="https://codepen.io/ash_s_west" className="modal-icon-link">
-        <img className="modal-icon" src='/static/mainpage/codepen/codepen_icon.svg'/>
+        <img className="modal-icon" src='static/mainpage/codepen/codepen_icon.svg'/>
         <span>CODEPEN</span>
       </a>
 
@@ -40,10 +40,10 @@ export default function CodePen() {
   }
 
   const modalList = [
-    {id:"codepen1",title:"Pure CSS pulsing button effect",url:"GRZbvym",img:"/static/mainpage/codepen-1.png"},
-    {id:"codepen2",title:"Pure CSS dark mode switch",url:"RwRejrb",img:"/static/mainpage/codepen-1.png"},
-    {id:"codepen3",title:"Pure CSS pulsing button effect",url:"GRZbvym",img:"/static/mainpage/codepen-1.png"},
-    {id:"codepen4",title:"Pure CSS dark mode switch",url:"RwRejrb",img:"/static/mainpage/codepen-1.png"},
+    {id:"codepen1",title:"Pure CSS pulsing button effect",url:"GRZbvym",img:"static/mainpage/codepen-1.png"},
+    {id:"codepen2",title:"Pure CSS dark mode switch",url:"RwRejrb",img:"static/mainpage/codepen-1.png"},
+    {id:"codepen3",title:"Pure CSS pulsing button effect",url:"GRZbvym",img:"static/mainpage/codepen-1.png"},
+    {id:"codepen4",title:"Pure CSS dark mode switch",url:"RwRejrb",img:"static/mainpage/codepen-1.png"},
   ]
 
   return <div id="codepens" className="center-text">
