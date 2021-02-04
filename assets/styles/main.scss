@@ -72,10 +72,10 @@ a {
 // ----- GENERAL EFFECTS ------ //
 
 .hover-grow {
-    transition: 0.1s ease-in-out;
+    transition: transform 0.1s ease-in-out;
     &:hover{
         transform: scale(1.1);
-        transition: 0.1s ease-in-out;
+        transition: transform 0.1s ease-in-out;
     }
 }
 

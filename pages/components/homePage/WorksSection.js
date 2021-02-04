@@ -1,5 +1,6 @@
 import CodePen from "./sectionComponents/CodePen"
 import Dribbble from "./sectionComponents/Dribbble"
+import Portfolio from "./sectionComponents/Portfolio"
 
 export default function WorksSection() {
 
@@ -7,7 +8,8 @@ export default function WorksSection() {
         <div id="works-about" className="container">
             <h2>My works</h2>          
         </div>
-        <CodePen/>
-        <Dribbble/>
+        <Portfolio/>
+        {/* <CodePen/>
+        <Dribbble/> */}
     </section>
 }

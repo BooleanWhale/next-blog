@@ -1,13 +1,12 @@
 import LinkedInLogo from '../svg/LinkedInLogo';
-import IconSun from '../svg/IconSun'
+import GoogleLogo from '../svg/GoogleLogo';
 
 export default function CertificationsSection() {
 
     const certArr = [
-        { name: "Linked in Assessments", image: <LinkedInLogo/>, link: "https://www.linkedin.com/in/ashsw/#ember90"},
-        { name: "google", image: <LinkedInLogo/>, link: "https://www.google.com"},
-        { name: "google", image: <LinkedInLogo/>, link: "https://www.google.com"}
-    ]
+        { name: "Linked in Assessments", image: <LinkedInLogo/>, link: "https://www.linkedin.com/in/ashsw"},
+        { name: "Google Skillshop", image: <GoogleLogo/>, link: "https://skillshop.exceedlms.com/student/award/12984802"},
+   ]
 
     return <section id="certifications" className="color-off-bg">
         <h2 className="center">Certified with</h2>

@@ -31,6 +31,9 @@ html {
             text-align: center;
         }
     }
+    #behances {
+        margin: 0 1.8em;
+    }
 }
 
 #about-me {
@@ -64,11 +67,12 @@ html {
         margin-bottom: .6em;
     }
     .container {
+        max-width: 55em;
         display: flex;
         justify-content: space-around;
         .certification {
             margin: 1em 1em;
-            width: 12em;
+            width: 18em;
             max-width: 30vw;
             img {
                 width: 100%;
@@ -181,18 +185,7 @@ html {
             h3 {
                 font-size: 1.6em;
             }
-        }
-    }
 
-    #works {
-        #works-about {
-            h2 {
-                text-align: center;
-            }
-        }
-        .modal-card {
-            max-width: 45vw;
-            margin: 1em 0.1em;
         }
     }
 

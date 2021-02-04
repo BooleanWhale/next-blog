@@ -41,7 +41,7 @@ export default function CodePen() {
 
   const modalList = [
     {id:"codepen1",title:"Pure CSS pulsing button effect",url:"GRZbvym",img:"static/mainpage/codepen-1.png"},
-    {id:"codepen2",title:"Pure CSS dark mode switch",url:"RwRejrb",img:"static/mainpage/codepen-1.png"},
+    {id:"codepen2",title:"Pure CSS dark mode switch",url:"RwRejrb",img:"static/mainpage/codepen-2.png"},
     {id:"codepen3",title:"Pure CSS pulsing button effect",url:"GRZbvym",img:"static/mainpage/codepen-1.png"},
     {id:"codepen4",title:"Pure CSS dark mode switch",url:"RwRejrb",img:"static/mainpage/codepen-1.png"},
   ]
