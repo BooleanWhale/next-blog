@@ -1,0 +1,5 @@
+out/
+node_modules/
+.next/
+public/
+.next/server/pages-manifest.json
