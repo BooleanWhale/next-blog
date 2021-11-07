@@ -13,7 +13,7 @@ export default function SocialLinks() {
     return ( <>
         {socialProfiles.map((profile, index) => 
             <a key={index} href={profile.link} title={profile.title} className="social-link">
-                <img alt={profile.title} src={profile.image}/>
+                <img alt={profile.title} src={profile.image} defer/>
             </a>)
         }
 </>)}

@@ -8,7 +8,7 @@ export default function HeroSection() {
       <a href="#contact-me" className="button accent-button">Let's talk</a>
     </div>
     <div className="img-container">
-        <img className="profile-pic shadow" src='static/mainpage/ashley-saleem-west.jpg'/>
+        <img className="profile-pic shadow" src='static/mainpage/ashley-saleem-west.jpg' alt="Ashley Saleem-West"/>
     </div>
   </section>
 }

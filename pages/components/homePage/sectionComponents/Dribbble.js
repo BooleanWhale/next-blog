@@ -5,7 +5,7 @@ export default function CodePen() {
   function dribbbleShot ({title, url, img_name, description, id}) { return <>
     <div className="modal-header">
       <a href="https://dribbble.com/Ashleysw" className="modal-icon-link">
-        <img className="modal-icon" src='static/mainpage/dribbble/dribbble_icon.png'/>
+        <img className="modal-icon" src='static/mainpage/dribbble/dribbble_icon.png' alt='dribbble' defer/>
         <span>DRIBBBLE</span>
       </a>
 
@@ -17,7 +17,7 @@ export default function CodePen() {
     </div>
 
     <div className="dribbble-main">
-      <img src={'static/mainpage/dribbble/'+img_name+'.png'}/>
+      <img src={'static/mainpage/dribbble/'+img_name+'.png'} alt={title} defer/>
       <div className="modal-desc">{description}</div>
     </div>
   </>

@@ -5,7 +5,7 @@ export default function Portfolio() {
   function behanceShot ({title, url, img_name, description, id}) { return <>
     <div className="modal-header">
       <a href="https://behance.com/Ashleysw" className="modal-icon-link">
-        <img className="modal-icon" src='static/mainpage/behance/behance_icon.svg'/>
+        <img className="modal-icon" src='static/mainpage/behance/behance_icon.svg' alt='behance' defer/>
         <span>behance</span>
       </a>
 
@@ -17,7 +17,7 @@ export default function Portfolio() {
     </div>
 
     <div className="dribbble-main">
-      <img src={'static/mainpage/behance/'+img_name+'.webp'}/>
+      <img src={'static/mainpage/behance/'+img_name+'.webp'} alt={title} defer/>
       <div className="modal-desc">{description}</div>
     </div>
   </>

@@ -5,7 +5,7 @@ export default function CodePen() {
   function codePenShot ({title,url,id}) { return <>
     <div className="modal-header">
       <a href="https://codepen.io/ash_s_west" className="modal-icon-link">
-        <img className="modal-icon" src='/static/mainpage/codepen/codepen_icon.svg'/>
+        <img className="modal-icon" src='/static/mainpage/codepen/codepen_icon.svg' alt='codepen' defer/>
         <span>CODEPEN</span>
       </a>
 
