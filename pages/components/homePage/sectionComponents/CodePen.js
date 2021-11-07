@@ -16,11 +16,18 @@ export default function CodePen() {
       <label htmlFor={id+"-check"} className="close-modal">+</label>
     </div>
 
-    <iframe style={{width: '70vw', maxWidth: '1000px', minHeight: '70vh'}} scrolling="no" title="Button click pulsing effect - Pure CSS" 
+    {/* <iframe style={{width: '70vw', maxWidth: '1000px', minHeight: '70vh'}} scrolling="no" title="Button click pulsing effect - Pure CSS" 
         src={"https://codepen.io/ash_s_west/embed/"+url+"?height=265&theme-id=dark&default-tab=css,result"} 
         loading="lazy" allowtransparency="true" allowFullScreen={true} height={265} frameBorder="no">
         See the Pen &lt;a href={"https://codepen.io/ash_s_west/pen/"+url}&gt;{title}&lt;/a&gt; by Ashley Saleem-West
         (&lt;a href='https://codepen.io/ash_s_west'&gt;@ash_s_west&lt;/a&gt;) on &lt;a href='https://codepen.io'&gt;CodePen&lt;/a&gt;.
+    </iframe> */}
+
+    <iframe style={{width: '70vw', maxWidth: '1000px', minHeight: '70vh'}} scrolling="no" title={title} 
+      src={"https://codepen.io/ash_s_west/embed/"+url+"?height=265&theme-id=dark&default-tab=css,result"} 
+      frameBorder="no" loading="lazy" allowtransparency="true" allowFullScreen={true}>
+      See the Pen <a href={"https://codepen.io/Saleemw/pen/" + url}>{title}</a>
+      by Ashley Saleem-West <a href="https://codepen.io/ash_s_west">@ash_s_west</a> on <a href="https://codepen.io">CodePen</a>.
     </iframe>
   </>
 }

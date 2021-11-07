@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class KlaviyoLogo extends Component {
 	render () { 
 		return (<>
-<svg class="svg-dark-mode" version="1.1" id="layer" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+<svg className="svg-dark-mode" version="1.1" id="layer" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
 	 viewBox="0 0 610.3 142.9">
 <path d="M9,64.5l91.8-60.8c4-2.3,8.9-2.3,12.9,0l91.8,60.8c3.6,1.8,5.2,6.1,3.4,9.8c-0.7,1.5-1.9,2.7-3.4,3.4l-12.3,8.1
 	c-30.1-47.5-92.9-61.6-140.4-31.6C40.1,62.3,29.3,73,21.2,85.8L8.8,77.7c-3.6-1.9-5-6.3-3.2-9.9C6.4,66.4,7.6,65.2,9,64.5z
