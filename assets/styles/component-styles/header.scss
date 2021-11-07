@@ -114,8 +114,10 @@ header {
             nav ul {
                 flex-direction: column;
                 z-index: 1000;
+                padding: 2em 0;
                 li {
                     width: 100%;
+                    padding: 1em 0;
                 }
             }
     
