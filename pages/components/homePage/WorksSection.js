@@ -9,7 +9,7 @@ export default function WorksSection() {
             <h2>My works</h2>          
         </div>
         <Portfolio/>
-        {/* <CodePen/>
-        <Dribbble/> */}
+        <CodePen/>
+        {/* <Dribbble/> */}
     </section>
 }

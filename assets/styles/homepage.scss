@@ -31,7 +31,8 @@ html {
             text-align: center;
         }
     }
-    #behances {
+    #behances,
+    #codepens {
         margin: 0 1.8em;
     }
 }
@@ -67,9 +68,9 @@ html {
         margin-bottom: .6em;
     }
     .container {
-        max-width: 55em;
         display: flex;
         justify-content: space-around;
+        align-items: center;
         .certification {
             margin: 1em 1em;
             width: 18em;

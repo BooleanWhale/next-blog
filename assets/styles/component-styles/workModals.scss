@@ -100,10 +100,11 @@ input[type="checkbox"]:checked + .modal {
     margin-bottom: 3em;
 }
 #codepens, #dribbbles{
-    >a {
-    margin: 1.5em 0;
-    }
-    .works-subtitle{
+    // >a {
+    // margin: 1.5em 0;
+    // }
+    .works-subtitle {
+        margin-top: 2em;
         margin-bottom: 0.5em; 
     }
 }

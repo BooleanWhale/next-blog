@@ -22,48 +22,52 @@ body {
 }
 
 a {
-    text-decoration: none;
-    @include transition(.1s ease-in-out);
-    cursor: pointer;
-    &:hover{
-        color: var(--link-hover);
-    }
+  text-decoration: none;
+  @include transition(.1s ease-in-out);
+  cursor: pointer;
+  &:hover{
+    color: var(--link-hover);
+  }
+}
+
+p {
+  line-height: 1.4em;
 }
 
 #dark-mode-switch {
-    display: none;
+  display: none;
 }
 
 .container {
-    margin: 0 auto;
-    max-width: 1080px;
-    padding-left: 1.8em;
-    padding-right: 1.8em;
+  margin: 0 auto;
+  max-width: 1080px;
+  padding-left: 1.8em;
+  padding-right: 1.8em;
 }
 
 .row {
-    margin: auto;
-    max-width: 1200px;
+  margin: auto;
+  max-width: 1200px;
 
 }
 
 .center {
-    margin: 0 auto;
-    text-align: center;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .page {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 .shadow {
-    box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.2);
 }
 
 // ----- TEXT ----- //
 
 .text-size-2 {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 // ----- GENERAL LAYOUT ------ //
@@ -72,15 +76,15 @@ a {
 // ----- GENERAL EFFECTS ------ //
 
 .hover-grow {
+  transition: transform 0.1s ease-in-out;
+  &:hover{
+    transform: scale(1.1);
     transition: transform 0.1s ease-in-out;
-    &:hover{
-        transform: scale(1.1);
-        transition: transform 0.1s ease-in-out;
-    }
+  }
 }
 
 #dark-mode-switch:checked ~ .header {
-    .light-hide {visibility: collapse;}
-    .dark-hide {visibility: visible;}
+  .light-hide {visibility: collapse;}
+  .dark-hide {visibility: visible;}
 }
 .dark-hide {visibility: collapse;position: absolute;}

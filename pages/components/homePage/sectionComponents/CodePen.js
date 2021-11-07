@@ -5,7 +5,7 @@ export default function CodePen() {
   function codePenShot ({title,url,id}) { return <>
     <div className="modal-header">
       <a href="https://codepen.io/ash_s_west" className="modal-icon-link">
-        <img className="modal-icon" src='static/mainpage/codepen/codepen_icon.svg'/>
+        <img className="modal-icon" src='/static/mainpage/codepen/codepen_icon.svg'/>
         <span>CODEPEN</span>
       </a>
 
@@ -15,13 +15,6 @@ export default function CodePen() {
 
       <label htmlFor={id+"-check"}><a className="close-modal">x</a></label>
     </div>
-  
-    {/* <iframe 
-      style={{width: '70vw', maxWidth: '1000px', height: '70vh'}} scrolling="no" title={title} 
-      src={url+"?height=265&theme-id=dark&default-tab=css,result"} loading="lazy" allowTransparency="true} allowFullScreen={true} height={565} frameBorder="no">
-      See the Pen &lt;a href={url}&gt;Pure CSS dark mode toggle switcher&lt;/a&gt; by Ashley Saleem-West
-      (&lt;a href='https://codepen.io/ash_s_west'&gt;@ash_s_west&lt;/a&gt;) on &lt;a href='https://codepen.io'&gt;CodePen&lt;/a&gt;.
-    </iframe> */}
 
     <iframe style={{width: '70vw', maxWidth: '1000px', minHeight: '70vh'}} scrolling="no" title="Button click pulsing effect - Pure CSS" 
         src={"https://codepen.io/ash_s_west/embed/"+url+"?height=265&theme-id=dark&default-tab=css,result"} 
@@ -40,17 +33,17 @@ export default function CodePen() {
   }
 
   const modalList = [
-    {id:"codepen1",title:"Pure CSS pulsing button effect",url:"GRZbvym",img:"static/mainpage/codepen-1.png"},
-    {id:"codepen2",title:"Pure CSS dark mode switch",url:"RwRejrb",img:"static/mainpage/codepen-2.png"},
-    {id:"codepen3",title:"Pure CSS pulsing button effect",url:"GRZbvym",img:"static/mainpage/codepen-1.png"},
-    {id:"codepen4",title:"Pure CSS dark mode switch",url:"RwRejrb",img:"static/mainpage/codepen-1.png"},
+    {id:"codepen1",title:"Dynamically load JS on click",url:"poPOMoV",img:"static/mainpage/codepen/codepen-1.webp"},
+    {id:"codepen2",title:"Pure CSS side menus",url:"bGrwVWx",img:"static/mainpage/codepen/codepen-2.webp"},
+    {id:"codepen3",title:"Pure CSS infinate slider",url:"ZEJpWoq",img:"static/mainpage/codepen/codepen-3.webp"},
+    {id:"codepen4",title:"Pure CSS dark mode switch",url:"RwRejrb",img:"static/mainpage/codepen/codepen-4.webp"},
   ]
 
   return <div id="codepens" className="center-text">
 
     <h3 className="center works-subtitle">CodePens</h3>
 
-    <div className="flex-gallery row">
+    <div className="flex-gallery">
 
       {modalList.map((item,index) => 
         <div key={index}>
@@ -61,7 +54,7 @@ export default function CodePen() {
     </div>
 
     <a className="button black-button" href="https://codepen.io/ash_s_west">See more on CodePen</a>
-    {/* <script defer src="/static/scripts/modelIframe.js"></script> */}
+    {/* <script defer src="static/scripts/modelIframe.js"></script> */}
 
   </div>
 }

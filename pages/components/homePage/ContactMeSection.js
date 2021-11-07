@@ -5,7 +5,9 @@ export default function ContactMeSection() {
         <div id="contact-me-text">
             <div>
                 <h3>Send me a message!</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar habitant elit magna platea. Curabitur posuere dolor duis adipiscing tortor duis. Pellentesque vitae dictumst tortor ipsum.
+                <p>Want to start a conversation? Why not send me a message using the contact form!
+                </p>
+                <p>Or if you prefer, you can email me manually at hello@ashleysw.com and I'll get back to you as soon as I can! I can't wait to speak with you!! :)
                 </p>
                 <p className="hand-emoji">👋</p>
             </div>
