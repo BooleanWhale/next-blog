@@ -13,7 +13,7 @@ export default function CodePen() {
         <h4 className="modal-title">{title}</h4>
       </a>
 
-      <label htmlFor={id+"-check"}><a className="close-modal">x</a></label>
+      <label htmlFor={id+"-check"} className="close-modal">+</label>
     </div>
 
     <iframe style={{width: '70vw', maxWidth: '1000px', minHeight: '70vh'}} scrolling="no" title="Button click pulsing effect - Pure CSS" 
@@ -53,7 +53,7 @@ export default function CodePen() {
 
     </div>
 
-    <a className="button black-button" href="https://codepen.io/ash_s_west">See more on CodePen</a>
+    <a className="button black-button" href="https://codepen.io/ash_s_west" rel="noopener" title="codepen">See more on CodePen</a>
     {/* <script defer src="static/scripts/modelIframe.js"></script> */}
 
   </div>

@@ -14,7 +14,7 @@ export default function CertificationsSection() {
         <h2 className="center">Certifications</h2>
         <div className="container">
             {certArr.map( (cert, index) =>
-                <a key={index} href={cert.link} title={cert.name} className="certification" target="_blank">
+                <a key={index} href={cert.link} title={cert.name} className="certification" target="_blank" rel="noopener">
                     {cert.image}
                 </a>
             )}

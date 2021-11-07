@@ -13,7 +13,7 @@ export default function Portfolio() {
         <h4 className="modal-title">{title}</h4>
       </a>
 
-      <label htmlFor={id+"-check"}><a className="close-modal">x</a></label>
+      <label htmlFor={id+"-check"} className="close-modal">+</label>
     </div>
 
     <div className="dribbble-main">
@@ -46,6 +46,6 @@ export default function Portfolio() {
       }
     </div>
 
-    <a className="button black-button" href="https://www.behance.net/ashsaleemwest">See more on Behance</a>
+    <a className="button black-button" href="https://www.behance.net/ashsaleemwest" rel="noopener" title="behance">See more on Behance</a>
   </div>
 } 

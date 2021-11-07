@@ -15,7 +15,7 @@ export default function Modal({info={}, content={}, trigger={}}) {
 
                 <div className="modal-inner dark-mode-off-bg ">
                     {content(info)}
-                    { id.includes('behance') && <a class="button black-button" title={info.title} href={info.url} target="_blank">See the full project on Behance</a> }
+                    { id.includes('behance') && <a class="button black-button" title={info.title} href={info.url} target="_blank" ref="noopener">See the full project on Behance</a> }
                 </div>
             </div>
 

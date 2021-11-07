@@ -34,7 +34,7 @@ export default function Navigation() {
         <ul>
             { navLinks.map((navLink, index) => 
                     <li key={navLink.title}>
-                        <a href={navLink.path}>{navLink.title}</a>
+                        <a href={navLink.path} title={navLink.title}>{navLink.title}</a>
                     </li>
                 )
             }
