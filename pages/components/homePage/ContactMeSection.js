@@ -14,10 +14,10 @@ export default function ContactMeSection() {
         </div>
         <div id="contact-me-box">
             <form id="contact-me-form">
-                <input placeholder="Your name" type="text" tabIndex="1" required autoFocus/><br/>
-                <input placeholder="Your Email Address" type="email" tabIndex="2" required/><br/>
-                <input placeholder="Your Phone Number" type="tel" tabIndex="3"/><br/>
-                <textarea placeholder="Type your Message Here...." tabIndex="5" required></textarea><br/>
+                <input placeholder="Your name" type="text" required autoFocus/><br/>
+                <input placeholder="Your Email Address" type="email" required/><br/>
+                <input placeholder="Your Phone Number" type="tel"/><br/>
+                <textarea placeholder="Type your Message Here...." required></textarea><br/>
                 <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Send message</button>
             </form>
             <div className="contact-bg main-gradient"></div>

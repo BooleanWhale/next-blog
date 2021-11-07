@@ -26,7 +26,7 @@ export default function CodePen() {
     <iframe style={{width: '70vw', maxWidth: '1000px', minHeight: '70vh'}} scrolling="no" title={title} 
       src={"https://codepen.io/ash_s_west/embed/"+url+"?height=265&theme-id=dark&default-tab=css,result"} 
       frameBorder="no" loading="lazy" allowtransparency="true" allowFullScreen={true}>
-      See the Pen <a href={"https://codepen.io/Saleemw/pen/" + url}>{title}</a>
+      See the Pen <a href={"https://codepen.io/Saleemw/pen/" + url}>Dynamically load JS on click</a>
       by Ashley Saleem-West <a href="https://codepen.io/ash_s_west">@ash_s_west</a> on <a href="https://codepen.io">CodePen</a>.
     </iframe>
   </>

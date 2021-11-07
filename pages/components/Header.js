@@ -12,7 +12,7 @@ export default function Header() {
             <header className="header">
                 {/* <img className="site-logo" src='/static/logo.png'/> */}
                 {/* <a href="/#" className="site-logo"><LogoIcon/></a> */}
-                <a className="site-logo" href="#">
+                <a className="site-logo" href="#" title="homepage">
                     <LogoName/>
                 </a>
                 <div className={`menu-container ${menuActive && 'active'}`}>
@@ -29,9 +29,7 @@ export default function Header() {
             <div className="header-spacer dark-bg"></div>
         </>
     ) // not all browsers support position:sticky;
-}
-
-
+} 
 
 
 // import React, {useState} from 'react';
